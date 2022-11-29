@@ -1,0 +1,58 @@
+:root {
+	//#region
+	--msl-height-input: 40px;
+	--msl-height-button: 40px;
+	//#endregion
+
+	//#region boder raius
+	--msl-border-radius-sm: 7px;
+	--msl-border-radius-md: 12px;
+	--msl-border-radius-lg: 16px;
+	//#endregion
+
+	//#region color
+
+	//#region button
+	--msl-font-size-button: 17px;
+	--msl-bg-button-primary: #1a73e8;
+	--msl-font-button-primary: #ffffff;
+	--msl-bg-button-primary-hover: #2080ff;
+	--msl-bg-button-text: transparent;
+	--msl-font-button-text: #1a73e8;
+	//#endregion
+	--msl-white: #fff;
+	--msl-black: #000000;
+
+	//#region font
+	--msl-font-color: #4d5156;
+	//#endregion
+
+	//#region input
+	--msl-input-boder-color: #c9d9e9;
+	--msl-input-boder-focus: #1a73e8;
+	--msl-input-boder-hover: #1a73e8;
+	--msl-input-shadow: rgb(26 155 232 / 20%);
+	//#endregion
+
+	//#endregion
+}
+
+.center {
+	text-align: center;
+}
+.bold {
+	font-weight: bold;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.d-flex {
+	display: flex;
+}
+.jus-center {
+	justify-content: center;
+}
+.jus-space-between {
+	justify-content: space-between;
+}

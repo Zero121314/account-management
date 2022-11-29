@@ -1,0 +1,17 @@
+.img-left {
+	background-image: url(../../../image/image-login.png);
+	min-height: 305px;
+	width: 383px;
+	height: 498px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 6px 0 0 6px;
+}
+.input-group-right {
+	width: 383px;
+	height: 498px;
+	background: var(--bg-white);
+	border-top-right-radius: 7.5px;
+	border-bottom-right-radius: 7.5px;
+}

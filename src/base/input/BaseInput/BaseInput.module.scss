@@ -1,0 +1,23 @@
+.msl-base-input {
+	min-height: var(--msl-height-input);
+	border-radius: var(--msl-border-radius-sm);
+	border: 1px solid var(--msl-input-boder-color);
+	display: block;
+	width: 100%;
+	padding: 0.1rem 1rem;
+	font-size: 16px;
+	line-height: 1.5;
+	height: 44px;
+	background-color: var(--msl-white);
+	background-clip: padding-box;
+	color: var(--msl-font-color) !important;
+	&:hover {
+		border-color: transparent !important;
+		box-shadow: 0 0 0 3px var(--msl-input-shadow);
+	}
+	&:focus {
+		border: 1px solid var(--msl-input-boder-focus) !important;
+		outline: none;
+		box-shadow: none !important;
+	}
+}

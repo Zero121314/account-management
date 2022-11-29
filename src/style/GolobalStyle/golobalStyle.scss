@@ -1,0 +1,34 @@
+:root {
+	--bg-white: #ffffff;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.flex-c-m {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+.d-flex {
+	display: flex;
+}
