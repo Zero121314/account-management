@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { PublicRoutes } from '@/routes/routes';
+import { PublicRoutes, PrivateRoutes } from '@/routes/routes';
 import { Fragment } from 'react';
 
 import './App.scss';
 import './base/style/style.scss';
 import './base/style/space.scss';
-import DefaultLayout from '@/layout/DefaultLayout/default';
+import './base/style/font.scss';
+import './style/icon/var-icon.scss';
+import DefaultLayout from './layouts/defaultLayout/DefaultLayout';
 
 function App() {
 	return (
@@ -13,6 +15,22 @@ function App() {
 			<div id="App">
 				<Routes>
 					{PublicRoutes.map((route, index) => {
+						const Layout = route.layout === null ? Fragment : route.layout ?? DefaultLayout;
+						const Page = route.component;
+						return (
+							<Route
+								path={route.path}
+								key={index}
+								element={
+									<Layout>
+										<Page />
+									</Layout>
+								}
+							></Route>
+						);
+					})}
+
+					{PrivateRoutes.map((route, index) => {
 						const Layout = route.layout === null ? Fragment : route.layout ?? DefaultLayout;
 						const Page = route.component;
 						return (

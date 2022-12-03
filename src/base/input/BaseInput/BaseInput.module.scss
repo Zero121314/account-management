@@ -21,3 +21,14 @@
 		box-shadow: none !important;
 	}
 }
+.error-field {
+	border-color: var(--msl-input-boder-error) !important;
+}
+.icon-input-error {
+	width: 16px;
+	height: 16px;
+	background-image: url(../../icon/icon_waning.svg);
+}
+.input-error-content {
+	color: var(--msl-error);
+}

@@ -6,6 +6,8 @@
 	span {
 		font-size: var(--msl-font-size-button);
 	}
+	line-height: var(--msl-height-button);
+	text-decoration: none;
 }
 
 .primary {
@@ -20,7 +22,7 @@
 .text {
 	background-color: var(--msl-bg-button-text);
 	&:hover {
-		text-decoration: underline var(--msl-font-button-text);
+		text-decoration: underline var(--msl-font-button-text) !important;
 	}
 	span {
 		color: var(--msl-font-button-text);

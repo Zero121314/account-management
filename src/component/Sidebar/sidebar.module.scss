@@ -1,0 +1,48 @@
+.sidbar-app {
+	width: 320px;
+	background-color: var(--msl-white);
+	height: calc(100vh - 56px);
+	overflow: auto;
+	border-right: 1px solid var(--msl-boder);
+	padding: 24px 8px;
+	.item-catalog {
+		border-radius: 4px;
+		height: 40px;
+		padding: 8px 16px;
+		cursor: pointer;
+		&.active {
+			background-color: var(--msl-primary);
+			.name-item-catalog {
+				color: var(--msl-white) !important;
+			}
+		}
+	}
+	.item-catalog + .item-catalog {
+		margin-top: 8px;
+	}
+	.name-item-catalog-child {
+		display: block;
+		color: var(--msl-font-color-second);
+		height: 36px;
+		line-height: 36px;
+		cursor: pointer;
+		margin-left: 62px;
+		position: relative;
+		&:hover {
+			color: var(--msl-font-color) !important;
+		}
+		&.active {
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				top: 13px;
+				border-radius: 50px;
+				background-color: var(--msl-primary);
+				left: -14px;
+			}
+		}
+	}
+}

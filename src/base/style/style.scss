@@ -11,7 +11,11 @@
 	//#endregion
 
 	//#region color
-
+	--msl-white: #ffffff;
+	--msl-black: #000000;
+	--msl-boder: #dadce0;
+	--msl-error: #ff3013;
+	--msl-primary: #1a73e8;
 	//#region button
 	--msl-font-size-button: 17px;
 	--msl-bg-button-primary: #1a73e8;
@@ -20,17 +24,17 @@
 	--msl-bg-button-text: transparent;
 	--msl-font-button-text: #1a73e8;
 	//#endregion
-	--msl-white: #fff;
-	--msl-black: #000000;
 
 	//#region font
-	--msl-font-color: #4d5156;
+	--msl-font-color: #212529;
+	--msl-font-color-second: #545965;
 	//#endregion
 
 	//#region input
 	--msl-input-boder-color: #c9d9e9;
 	--msl-input-boder-focus: #1a73e8;
 	--msl-input-boder-hover: #1a73e8;
+	--msl-input-boder-error: #ff3013;
 	--msl-input-shadow: rgb(26 155 232 / 20%);
 	//#endregion
 
@@ -55,4 +59,23 @@
 }
 .jus-space-between {
 	justify-content: space-between;
+}
+.flex-c-m {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
 }

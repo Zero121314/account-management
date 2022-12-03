@@ -1,0 +1,15 @@
+.header-app {
+	height: 56px;
+	background-color: var(--msl-white);
+	border-bottom: 1px solid var(--msl-boder);
+	.logo-black {
+		width: 80px !important;
+		height: 30px !important;
+	}
+	.avatar {
+		height: 32px;
+		width: 32px;
+		border-radius: 50% !important;
+		background: tan;
+	}
+}

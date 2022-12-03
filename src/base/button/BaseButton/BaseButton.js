@@ -11,7 +11,7 @@ function BaseButton({ to, href, onClick, className, disable, children, primary, 
 	};
 	if (to) {
 		props.to = to;
-		Comp = 'Link';
+		Comp = Link;
 	} else if (href) {
 		props.href = href;
 		Comp = 'a';

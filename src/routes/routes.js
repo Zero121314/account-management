@@ -1,9 +1,14 @@
-import Login from '@/component/Login-out/Login/Login';
-import Register from '@/component/Login-out/Register';
-import LayoutCenter from '@/layout/LayoutCenter/layoutCenter';
+import LayoutCenter from '@/layouts/layoutCenter/LayoutCenter';
+import SignIn from '@/component/sign/signIn/SignIn';
+import SignUp from '@/component/sign/signUp/SignUp';
+import Home from '@/component/home/Home';
 export const PublicRoutes = [
-	{ path: '/', component: Login, layout: LayoutCenter },
-	{ path: '/register', component: Register },
+	{ path: '/login', component: SignIn, layout: LayoutCenter },
+	{ path: '/register', component: SignUp, layout: LayoutCenter },
 ];
 
-export const PrivateRoutes = {};
+export const PrivateRoutes = [
+	{ path: '/', component: Home },
+	{ path: '/info', component: Home },
+	{ path: '/security', component: Home },
+];
